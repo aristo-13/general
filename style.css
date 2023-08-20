@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(227, 244, 245, 0.74);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:min(95%,500px) ; 
+    border: solid 1px;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px  1px rgba(0, 0, 0, 0.338);
+}
+.category{
+    text-transform: uppercase;
+    font-weight: 400;
+    float: left;
+    padding: 0.5rem;
+    border: none;
+}
+.category.bg{
+    background-color: rgb(9, 87, 117);
+    color: white;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.generate{
+    padding: 0.5rem;
+   cursor: pointer;
+}
+.generate i.rotate{
+    animation: roo 1.6s ease;
+}
+.message{
+    padding: 1rem;
+}
+.message span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.669);
+    padding: 0.4rem;
+}
+.author::selection{
+    background-color: transparent;
+}
+
+@keyframes roo {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .category{
+        float: none;
+        font-weight: 200;
+        padding: 0.5rem;
+        border: none;
+    }
+    .categories{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
