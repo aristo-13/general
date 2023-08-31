@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(183, 178, 178);
+    background-color: rgb(200, 196, 255);
+}
+.container{
+    position: relative;
+  width: min(100%,320px);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 2, 14);
+  border: solid ;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 15px;
+}
+.head{
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.787);
+}
+.checks{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3rem;
+    padding: 0.7rem;
+    flex-wrap: wrap;
+}
+.checks .box{
+    background-color: rgb(232, 231, 237);
+    padding: 0.4rem;
+    color: rgb(7, 2, 14);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.password{
+    padding: 0.3rem;
+    font-size: 1.3rem;
+    cursor:  pointer;
+}
+.password::selection{
+    background-color: transparent;
+}
+.length{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.passLength{
+    appearance: none;
+    width: min(100%,250px);
+    height: 2px;
+    cursor: pointer;
+}
+.generate{
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(103, 103, 239);
+    color: white;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.generate:active{
+    scale: 0.97;
+}
