@@ -40,19 +40,60 @@ body{
     flex-wrap: wrap;
 }
 .checks .box{
-    background-color: rgb(232, 231, 237);
+    background-color: rgba(232, 231, 237, 0.303);
     padding: 0.4rem;
-    color: rgb(7, 2, 14);
+    color: rgb(255, 255, 255);
+    border: solid 1px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
+.generate-area{
+    position: relative;
+    width: 90%;
+    height: 40px;
+    overflow: hidden;
+}
+.copy{
+    position: absolute;
+    top: 50%;
+    color: rgb(103, 103, 239);
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: background-color 1s ease;
+}
+.copy:hover{
+   background-color: rgb(220, 213, 213);
+}
+.copy:active{
+    scale: 0.98;
+}
+.text{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    font-size: 12px;
+    color: rgba(103, 103, 239, 0.516);
+    transform: translateY(-50%);
+    animation: fade 2s ease;
+}
+@keyframes fade {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
 .password{
+    width: 100%;
+    height: 100%;
     padding: 0.3rem;
     font-size: 1.3rem;
     cursor:  pointer;
+    outline: none;
 }
 .password::selection{
     background-color: transparent;

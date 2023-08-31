@@ -28,8 +28,8 @@ const numbers = '1234567890';
 const characters = '!@#$%&?';
 let generate;
 
+const show = document.querySelector('.password');
 function displayPassword(ins) {
-    const show = document.querySelector('.password');
     show.value = ins;
 }
 
@@ -68,3 +68,20 @@ generateBtn.addEventListener('click', () => {
 
     generate.getPassword();
 });
+
+
+const copy = document.querySelector('.copy')
+copy.addEventListener('click', () =>{
+    if(show.value !== ''){
+        navigator.clipboard.writeText(show.value)
+        showCopiedLabel()
+    }
+})
+
+function showCopiedLabel(){
+    document.querySelector('.text').style.display = 'block'
+
+    setInterval(() =>{
+        document.querySelector('.text').style.display = 'none'
+    },2000)
+}
