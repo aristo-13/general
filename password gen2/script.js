@@ -83,5 +83,5 @@ function showCopiedLabel(){
 
     setInterval(() =>{
         document.querySelector('.text').style.display = 'none'
-    },2000)
+    },3000)
 }
