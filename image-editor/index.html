@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/general/image-editor/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script defer src="/general/image-editor/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>IMAGE EDITOR</span>
+        </div>
+        <div class="image-editor">
+            <div class="side-bar">
+                <div class="inner">
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">light_mode</span>
+                        <span class="choice">brightness</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">contrast</span>
+                        <span class="choice">contrast</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">
+                            filter_b_and_w
+                            </span>
+                        <span class="choice">grayscale</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">
+                            invert_colors
+                            </span>
+                        <span class="choice">invert</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">
+                            opacity
+                            </span>
+                       <span class="choice">opacity</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">
+                            gradient
+                            </span>
+                      <span class="choice">saturate</span>
+                    </div>
+                    <div class="choice-box">
+                        <span class="material-symbols-outlined">
+                            ev_shadow
+                            </span>
+                       <span class="choice">drop-shadow</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="add">
+                    <span class="material-symbols-outlined addicon">
+                        add_photo_alternate 
+                        </span>
+                        <input type="file" name="image" id="image-input" accept="image/*">
+                    <div class="inn">
+                         <img src="" alt="" id="edited-image">
+                     </div>
+                </div>
+                <div class="button">
+                    <div class="adjust">
+                    </div>
+                    <div class="btn">
+                        <button class="choose-img">
+                            <span class="material-symbols-outlined">add</span>image
+                        </button>
+                        <button class="save">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
